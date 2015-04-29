@@ -17,10 +17,6 @@ EXPOSE 1337
 
 WORKDIR /
 
-CMD ["ls"]
-
 COPY launch.sh /
 
-RUN chmod +x /launch.sh
-
-CMD ["/bin/bash", "-c", "/launch.sh"]
+CMD ["/launch.sh"]
